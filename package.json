@@ -1,0 +1,21 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Avenix17",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Avenix17/Team-Profile-Generator/issues"
+  },
+  "dependencies": {
+    "inquirer": "^9.1.0",
+    "jest": "^28.1.3"
+  }
+}
