@@ -15,7 +15,7 @@
     "url": "https://github.com/Avenix17/Team-Profile-Generator/issues"
   },
   "dependencies": {
-    "inquirer": "^9.1.0",
+    "inquirer": "^8.2.4",
     "jest": "^28.1.3"
   }
 }
