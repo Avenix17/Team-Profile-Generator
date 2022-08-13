@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    /* border-style: dotted; */
+}
+
+:root {
+    --primary: #eae2b7;
+    --secondary: #f77f00;
+    --tetiary: #e4e4e3;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--tetiary);
+}
+
+h4 {
+    font-weight: bold;
+}
+
+#navbar {
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    font-size: 50px;
+}
+
+
+.card-header {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.card-body {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.container {
+    margin: auto;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+/* #team-cards {
+    width: 1000px;
+} */
+
+a {
+    color: var(--tetiary);
+}
+
+a:hover {
+    color: var(--primary);
+}
