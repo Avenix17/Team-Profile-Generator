@@ -1,6 +1,8 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
+const htmlGenerator = require('./src/htmlgenerator')
+
 // profiles for team members
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
@@ -185,4 +187,30 @@ const createEmployee = () => {
 };
 
 
-//function to write to and create html file using htmlgenerator.js
+//function to write to and create html file
+
+const writeFile = data => {
+    fs.writeFile('./dist/index.html', data, err => {
+        // if there is an error 
+        if (err) {
+            console.log(err);
+            return;
+        // when the profile has been created 
+        } else {
+            console.log("Your team profile has been successfully created! Please check out the index.html")
+        }
+    })
+}; 
+
+//starts command-line app
+createManager()
+  .then(createEmployee)
+  .then(workTeam => {
+    return htmlGenerator(workTeam);
+  })
+  .then(createdHTML => {
+    return writeFile(createdHTML);
+  })
+  .catch(err => {
+ console.log(err);
+  });
