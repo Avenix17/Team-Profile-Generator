@@ -34,7 +34,7 @@ const createManager = () => {
             name: 'id',
             message: "Please enter the Manager's employee ID: ",
             validate: userInput => {
-                if (isNaN(userInput)) {
+                if (isNaN(userInput) || userInput.trim() === '') {
                     console.log("You must enter an ID.");
                     return false;
                 } else {
@@ -105,7 +105,7 @@ const createEmployee = () => {
             name: 'id',
             message: "Please enter employee's ID: ",
             validate: userInput => {
-                if (isNaN(userInput)) {
+                if (isNaN(userInput) || userInput.trim() === '') {
                     console.log("You must enter an ID.");
                     return false;
                 } else {

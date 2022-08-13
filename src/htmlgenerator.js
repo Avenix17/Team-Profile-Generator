@@ -2,10 +2,11 @@
 const generateManager = function (manager) {
     return `
     <div class="col-6 mt-5">
-        <div class="card">
+        <div class="card h-100">
             <div class="card-header">
                 <h3>${manager.name}</h3>
-                <h4>Manager</h4><i>💼</i>
+                <h4>Manager</h4>
+                <div>💼</div>
             </div>
             <div class="card-body">
                 <p class="id">ID: ${manager.id}</p>
@@ -21,10 +22,11 @@ const generateManager = function (manager) {
 const generateEngineer = function (engineer) {
     return `
     <div class="col-6 mt-5">
-        <div class="card">
+        <div class="card h-100">
             <div class="card-header">
                 <h3>${engineer.name}</h3>
-                <h4>Engineer</h4><i>🖥️</i>
+                <h4>Engineer</h4>
+                <div>🖥️</div>
             </div>
             <div class="card-body">
                 <p class="id">ID: ${engineer.id}</p>
@@ -40,10 +42,11 @@ const generateEngineer = function (engineer) {
 const generateIntern = function (intern) {
     return `
     <div class="col-6 mt-5">
-        <div class="card">
+        <div class="card h-100">
             <div class="card-header">
                 <h3>${intern.name}</h3>
-                <h4>Intern</h4><i>☕</i>
+                <h4>Intern</h4>
+                <div>☕</div>
             </div>
             <div class="card-body">
                 <p class="id">ID: ${intern.id}</p>
